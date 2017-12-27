@@ -1,0 +1,184 @@
+ @import url('https://fonts.googleapis.com/css?family=Raleway'); /*--- Nav Font --*/
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway'); /*--- Heading Font --*/
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height:100%;
+	width: 100%;
+}
+h2 {
+	font-family: 'Playfair display', serif;
+	font-size: 200%;
+	font-weight: 700;
+	text-shadow: 4px 4px 4px #aaa;
+	text-align: center;
+	text-decoration: underline;
+}
+p {
+	font-family: 'Raleway', serif;
+	color: #2C2C2C; /*hax value of dark gray color */
+	font-size: 140%;
+	line-height: 180%;
+	text-align: justify; /*it's to giv it a more up and down look to the letter */
+	font-weight: 300; /*thin weight and narrow font */
+}
+img {
+	text-align: center;
+	max-width: 100%; /*so it doesn't stretch ot of the page */
+	height: auto; /* so whatever the height and width of the image can stay same and 
+	adapt to the change of the browser */
+	width: auto;
+}
+.intro { /*. intro to referennce to the intro class */
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	background: url(images/photo1.jpg) no-repeat 50% 50%; /*so image just displays once */
+	background-size: cover; /*without this line the full pic won't appear */
+	display: table;
+	top: 0; /*makes sure the top margin shows up */
+}
+.intro .inner {
+	display: table-cell; 
+	vertical-align: middle;
+	width: 100%; 
+	max-width: none;
+}
+.content { /*this class to have the intro inner appear in the middle cause it get pushed away in the side */
+	max-width: 600px; /*so it comes to the center of teh page */
+	margin: auto;
+}
+h1 { /*styling the all the header1 texts */
+	font-family: 'Playfair Display', serif;
+	font-size: 300%;
+	font-weight: 700; /*ssimilar to the heading2 to look bold */
+	color: #FFF; /*hax value of the font */
+	text-align: center;
+	padding: 2%;
+	text-shadow: 0px 0px 250px #000; /*not necessary but it helps the letter to appear more sharply */
+}
+.content p { /*paragrapgh text inside on content */
+	color: #FFF; /*hax value fff */
+}
+.inner { /*shaping the font size of "photography" and "portfolio letters" */
+	max-width: 600px;
+	margin: auto;
+	font-size: 170%;
+	line-height: 1.6;
+	padding: 10px;
+}
+/*--- Start Nav --*/
+nav {
+	float: left; /*float to the lefy side of the screen */
+	padding: 5% 5% 0 0; /*not a big change just to set up the spaces */
+	height: 50px;
+}
+nav ul {
+	list-style: none; /*this is to get rid off the dots that usual "unordered lists" comes with by default */
+	float: left;
+}
+nav ul li { /* styling the list items letters itself */
+	font-family: 'Raleway', sans-serif; /*same font family as the paragraph tag, serif as the backup font */
+	font-size: 120%; /*to make the letter larger */
+}
+nav ul li a { /* for ahef tag */
+	color: #FFF;
+	text-decoration: none; /*it's gonna take away the underline */
+}
+nav ul li a:hover { /*so it will make the texts to be underlines when we hover over it */
+	text-decoration: underline;
+}
+nav ul, nav:active ul { /*active basically means when we hover over the items its gonna be active */
+	display: none; /*so unordered list won't display untill we hover over it, the menu icon there */
+	padding: 8px 0;
+	left: 45px;
+	top: 60px;
+	width: 20%;
+	z-index: 1000; /*this is to make it display in top of any other eleemnt of the page */
+}
+nav li {
+	width: 100%;
+	padding: 8px 0 10px 7px; /*8px top 0 right 10 bottom and 7px left, it's to make spacing in the items */
+	margin: 0;
+}
+nav:hover ul { /*so it displays on the same spot of the page */
+	display: block; 
+	position: absolute;
+}
+#menu-icon { /*using the menu-icon id here */
+	width: 30px;
+	height: 26px;
+	background: url(img/nav-icon.png) center; /*image is the menu-icon image and put it in center */
+	display: inline-block;
+	margin: 50px 0 0 50px;
+}
+/*---End Nav --*/
+.left-col {
+	width: 60%; 
+	float: left; /*we want it left side of the screen */
+	margin: 4% 0 4% 4%; /* 4% top 0 right 4*left $% down */
+}
+.sidebar { /*so the picture can be pushed left */
+	width: 26%;
+	float: left;
+	margin: 4%; /* 4% all around */
+}
+.one-third-port { /*one third porfolio section */
+	width: 29.333333%;
+	padding: 2%;
+	float: left;
+}
+.one-third-port img:hover {
+	opacity: .6; /*so if we hover over the images in porfolio, se can see through, (not necessary just for styling */)
+}
+.contact p { /*section contact then paragraph */
+	text-align: center;
+	letter-spacing: 5px; /*space the letter tehmselves */
+}
+.contact a {
+	color: #2C2C2C; /*hax code for off black color */
+	text-decoration: none;
+}
+.break {
+	display: none; /*so it doesn't display the content with any lines */
+}
+.clearfix {
+	clear: both;
+	height: 3%; /*clearfix height to space stuff out */
+}
+.parallax { /*section class parallax */
+	background: url("images/img20.jpg") repeat fixed 100%;
+	opacity: .5; /*to make it a little blurry and faded */
+}
+.parallax-inner {
+	padding-top: 17%; /*it's just gonna create the space for the image to be shown */
+}
+
+/*
+.social {
+	list-style-type: none;
+	text-align: center;
+}
+.social li {
+	display: inline;
+}
+.social i {
+	font-size: 270%;
+	margin: 1% 5% 7% 4%;
+	color: #2C2C2C;
+}
+.social i:hover {
+	color: #606060;
+}
+footer.second {
+	background-color: #2C2C2C;
+}
+*/
+
+
+footer.second p {
+	color: #FFF;
+	text-align: center;
+	padding: 5%; 
+}

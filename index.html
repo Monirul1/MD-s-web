@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html lang="en"> <!-- telling the code what language you will be using (not necessary)-->
+<head>
+	<meta charset="utf-8"/> <!-- universal character transformation format using 8 bit -->
+	<title> Monirul's Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css" /> <!--linking the contents into this page (e.g.) style.css -->
+	<!--<link href="css/font-awesome.min.css" rel="stylesheet"/> --><!-- pointing to the css folder of my folder -->
+	<link rel="shortcut icon" type="image/png" href="img/camera-icon.png"/>
+</head>
+<body>
+	<section class="intro"> <!--we give this section a class so we can use more section later and reference each individally in css when designing the page -->
+		<nav> <!-- navigation bar to navigate through the contents of the page -->
+			<a href="#" id="menu-icon"></a>
+			<ul>
+				<li><a href="#about">About Me</a></li> <!--rather than using a link to take us to a different page, we are using link to take us to the section of our page using # reference-->
+				<li><a href="#port">Portfolio</a></li>
+				<li><a href="#serv">Services</a></li>
+				<li><a href="#contact">Contact Me</a></li>
+			</ul>
+		</nav>
+		<div class="inner">  <!-- we are having these classes so it can give us more control when we use css -->
+			<div class="content">
+				<h1>Photography</h1> <!--h1 is the biggest letter html can create -->
+				<p> <br class="break">WELCOME TO MY PORTFOLIO!</p>
+			</div>
+		</div>
+	</section>
+	<a name="about">
+<div class="clearfix"></div> <!-- this is to make the boundary after first page SO when we use css it can clear the style of each page and view them separately to the user to ensure that
+browsers know the height of the
+containing box, because it only
+contains floated elements-->
+	<section class="left-col">
+		<h2>About Me</h2>
+		<p style="text-indent: 6%;"> I handle every photography project with care, passion and purpose. My experienced approach ensures that I can craft the best possible digital representation of yourself, and give you an ideal photoshoot experience. I will build something that can grow and evolve with you by putting your interest first".</p>
+	</section>
+	<section class="sidebar">
+		<img src="images/photo14.jpg">
+	</section>
+<div class="clearfix"></div>
+	<a name="port">
+		<h2>My Portfolio</h2>
+		<section class="one-third-port">
+			<img src="images/photo4.jpg"></a>
+		</section>
+		<section class="one-third-port">
+			<img src="images/photo3.jpg"></a>
+		</section>
+		<section class="one-third-port">
+			<img src="images/photo8.jpg"></a>
+		</section>
+		<section class="one-third-port">
+			<img src="images/photo7.jpg"></a>
+		</section>
+		<section class="one-third-port">
+			<img src="images/img22.jpg"></a>
+		</section>
+		<section class="one-third-port">
+			<img src="images/img23.jpg"></a>
+		</section>
+<div class="clearfix"></div>
+	<a name="serv">
+	<section class="left-col">
+		<h2>My Services</h2>
+			<p style="text-indent: 6%;">Since I started to offer my photography services, I've become a part of the art of photographs. I believe that the quality of our work has only one judge – our customers. That’s why we offer a client satisfaction guarantee for every project. </p>
+	</section>
+	<section class="sidebar">
+		<section class="contact">
+			<p>Weddings <br class="break"> Portraits <br class="break"> Engagements <br class="break"> Social Events <br class="break"> Artistic Modeling <br class="break"> School Photos <br class="break"> Family Portraits</p>
+		</section>
+	</section>
+<div class="clearfix"></div>
+	<a name="contact">
+		<section class="parallax">
+			<div class="parallax-inner">
+			</div>
+		</section>
+<div class="clearfix"></div>
+	<h2>Contact Me</h2>
+	<section class="contact">
+		<p>Monirul <br class="break"> <a href="mmonirulislam@fordham.edu">mmonirulislam@fordham.edu</a> <br class="break"> 646-861-9440</p>
+		<p>New York, <br class="break">NY</p>
+	</section>
+<div class="clearfix"></div>
+	<footer>
+		<p>&copy; copy rights reserved to @Monirulislam.</p>
+	</footer>
+</body>
+</html>

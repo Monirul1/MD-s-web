@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<body>
+	<section class="intro"> <!--we give this section a class so we can use more section later and reference each individally in css when designing the page -->
+		<nav> <!-- navigation bar to navigate through the contents of the page -->
+			<a href="#" id="menu-icon"></a>
+			<ul>
+				<li><a href="#about">About Me</a></li> <!--rather than using a link to take us to a different page, we are using link to take us to the section of our page using # reference-->
+				<li><a href="#port">Portfolio</a></li>
+				<li><a href="#serv">Services</a></li>
+				<li><a href="#contact">Contact Me</a></li>
+			</ul>
+		</nav>
+		<div class="inner">  <!-- we are having these classes so it can give us more control when we use css -->
+			<div class="content">
+				<h1>Photography</h1> <!--h1 is the biggest letter html can create -->
+				<p>my pictures.</p>
+			</div>
+		</div>
+	</section>
+	<a name="about"> <!-- we don't need the full href tag we already have it in the navigation -->
+<div class="clearfix"></div> <!--this is to create a horizontal line after each content of the page-->
+<section class="left-col">
+<h2>About Me</h2>
+<P style="text-indent: 8%">I'm so grateful for each and every experience that life had to offer me and I'm truly humbled to be part of each and evey one of yours speacial moments. While I take this responsibility very seriously I do strive to create a comfortable, relaxed atmosphere so you are free to be you.</P><!--text indent to indent the paragraph-->
+</section>
+<section class="sidebar"><!--because the image is on the side of the page-->
+	<img src="images/photo2.jpg">
+</section> <!--end of section one with the image-->
+<div class="clearfix"></div> <!--beginning of section 2-->
+<a name="port">
+	<h2>My Portfolio</h2>
+	<section class="one-third-port"> <!--because at this point we are once third of the page -->
+		<a href="https://static.pexels.com/photos/696708/pexels-photo-696708.jpeg" target="_blank"><img src="images/pic9.jpg"></a>
+	</section>
+	<section class="one-third-port"> 
+		<a href="https://static.pexels.com/photos/696747/pexels-photo-696747.jpeg" target="_blank"><img src="images/pic7.jpg"></a>
+	</section>
+	<section class="one-third-port"> 
+		<a href="https://static.pexels.com/photos/696752/pexels-photo-696752.jpeg" target="_blank"><img src="images/pic5.jpg"></a>
+	</section>
+	<section class="one-third-port"> 
+		<a href="https://static.pexels.com/photos/696753/pexels-photo-696753.jpeg" target="_blank"><img src="images/pic11.jpg"></a>
+	</section>
+	<section class="one-third-port"> 
+		<a href="https://static.pexels.com/photos/696754/pexels-photo-696754.jpeg" target="_blank"><img src="images/pic6.jpg"></a>
+	</section>
+	<section class="one-third-port"> 
+		<a href="https://static.pexels.com/photos/696755/pexels-photo-696755.jpeg" target="_blank"><img src="images/pic3.jpg"></a>
+	</section>
+	<div class="clearfix"></div> <!--beginning of section 3-->
+	<a name="serv">
+		<section class="left-col">
+			<h2>My Services</h2>
+			<p style="text-indent: 6%">Since I started to offer my photography services to my customers, I've signed up as a leader in the art of photographs. I believe that the quality of our work work should only be judged by our customers</p>
+		</section>
+		<section class="sidebar"> <!--sidebar class will have some lists on the service section-->
+			<section class="contact">
+				<p>Wedding Portraits <br class="break"> Engagements <br class="break"> Social Events <br class="break"> Artistic Modeling <br class="break"> School Photos <br class="break"> Family Portraits
+				</p>
+			</section>
+		</section>
+	<div class="clearfix"></div> <!--beginning of section 4-->
+	<a name="contact">
+		<section class="parallax">   <!--this part of the code will be hiding pictures behing the screen and it willbe done in css -->
+			<div class="parallax-inner">
+			</div>
+		</section>
+	<div class="clearfix"></div> <!--beginning of section 5-->
+	<h2>Contact Me</h2>
+	<section class="contact">
+		<p>Monirul <br class="break"><a href="mmonirulislam@fordham.edu">mmonirulislam@fordham.edu</a> <br class="break"> 646-861-9440</p> <!--href in email so when someone clicks on email it will open up their computers email-->
+		<p> New York, <br class="break"> NY</p>
+	</section>
+	<div class="clearfix"></div> <!--beginning of section 6-->
+	<footer>
+		<ul class="social">
+			<li><a href="https://www.facebook.com/manirz.islam"></a></li>
+		</ul>		
+	</footer>
+</body>
+</html>
